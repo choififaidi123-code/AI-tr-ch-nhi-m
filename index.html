@@ -8,7 +8,6 @@
     :root {
       --blue-sidebar: #00529b;
       --blue-sidebar-hover: rgba(255, 255, 255, 0.14);
-      --blue-primary: #1a66cc;
       --blue-circle: #c6dcfe;
       --blue-bubble: #d2e3fd;
       --bg-outer: #f2f4f7;
@@ -36,15 +35,15 @@
       min-height: 100vh;
     }
 
-    /* Thanh trắng mỏng trên cùng giống ảnh 2 */
+    /* Thanh trắng trên cùng */
     .top-strip {
-      height: 46px;
+      height: 48px;
       background: #ffffff;
       border-bottom: 1px solid #e5e7eb;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 20px 0 96px;
+      padding: 0 18px 0 94px;
       position: fixed;
       top: 0;
       left: 0;
@@ -70,7 +69,7 @@
       font-weight: 600;
     }
 
-    /* Sidebar xanh dương bên trái giữ nguyên thiết kế ảnh 2 */
+    /* Sidebar xanh bên trái giữ nguyên giao diện ảnh 2 */
     .sidebar {
       width: 78px;
       background-color: var(--blue-sidebar);
@@ -141,10 +140,9 @@
       transform: translateX(0);
     }
 
-    /* Khung nội dung chính */
     .main-container {
       margin-left: 78px;
-      padding: 64px 18px 28px;
+      padding: 66px 18px 28px;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -191,7 +189,6 @@
       line-height: 1.5;
     }
 
-    /* Buttons & Inputs */
     .btn-primary {
       background: var(--blue-sidebar);
       color: #ffffff;
@@ -204,7 +201,6 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      transition: background 0.2s;
     }
 
     .btn-primary:hover {
@@ -234,20 +230,19 @@
       font-size: 14px;
       outline: none;
       background: #fff;
-      transition: border-color 0.2s;
     }
 
     input:focus, textarea:focus, select:focus {
       border-color: var(--blue-sidebar);
     }
 
-    /* ========= TRANG 1: TRANG CHỦ - LỘ TRÌNH GIỐNG ẢNH 2 ========= */
+    /* TRANG CHỦ */
     .intro-box {
       background: #f8fbff;
       border: 1px solid #dbeafe;
       border-radius: 14px;
       padding: 16px 18px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -259,7 +254,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 12px;
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     .stat-card {
@@ -350,7 +345,7 @@
       color: #111827;
     }
 
-    /* ========= TRANG 2: KIỂM CHỨNG & TẢI TỆP ========= */
+    /* KIỂM CHỨNG & TẢI TỆP */
     .split-grid {
       display: grid;
       grid-template-columns: 1.18fr 0.82fr;
@@ -383,7 +378,6 @@
       text-align: center;
       cursor: pointer;
       margin-bottom: 14px;
-      transition: all 0.2s;
     }
 
     .upload-box:hover, .upload-box.dragover {
@@ -402,7 +396,6 @@
       font-weight: 600;
     }
 
-    /* Đánh giá mức độ nguy hiểm */
     .danger-card {
       border: 1.5px solid #e2e8f0;
       border-radius: 14px;
@@ -505,7 +498,7 @@
       cursor: pointer;
     }
 
-    /* ========= TRANG 3: LỊCH SỬ TRA CỨU ========= */
+    /* LỊCH SỬ */
     .filter-bar {
       display: flex;
       gap: 10px;
@@ -525,7 +518,7 @@
       flex-wrap: wrap;
     }
 
-    /* ========= TRANG 4: QUY TRÌNH KHAI BÁO ========= */
+    /* QUY TRÌNH KHAI BÁO */
     .steps-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -541,7 +534,7 @@
       padding: 14px;
     }
 
-    /* ========= TRANG 5: PHẢN HỒI ĐÁNH GIÁ ========= */
+    /* PHẢN HỒI ĐÁNH GIÁ */
     .mood-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -559,12 +552,6 @@
       flex-direction: column;
       align-items: center;
       gap: 8px;
-      transition: all 0.2s;
-    }
-
-    .mood-card:hover {
-      border-color: #93c5fd;
-      transform: translateY(-2px);
     }
 
     .mood-card.active-sad { border-color: #ef4444; background: #fef2f2; }
@@ -618,7 +605,6 @@
       border-top: 1px solid #e2e8f0;
     }
 
-    /* ========= TRANG 6: CÀI ĐẶT BỘ LỌC ========= */
     .setting-row {
       display: flex;
       justify-content: space-between;
@@ -628,7 +614,6 @@
       gap: 12px;
     }
 
-    /* FOOTER GIỐNG ẢNH 1 */
     .footer-note {
       text-align: center;
       padding: 26px 12px 16px;
@@ -638,7 +623,7 @@
       margin-top: auto;
     }
 
-    /* ========= CHATBOT GEMINI NỔI GIỐNG ẢNH 1 ========= */
+    /* CHATBOT GEMINI TÁCH RIÊNG GIỐNG ẢNH 1 */
     .gemini-fab {
       position: fixed;
       right: 22px;
@@ -654,7 +639,6 @@
       align-items: center;
       justify-content: center;
       z-index: 60;
-      transition: transform 0.2s ease;
     }
 
     .gemini-fab:hover {
@@ -681,7 +665,6 @@
 
     .gemini-popup.open {
       display: flex;
-      animation: fadeIn 0.2s ease;
     }
 
     .gemini-head {
@@ -737,29 +720,28 @@
 </head>
 <body>
 
-  <!-- Thanh trắng trên cùng -->
   <div class="top-strip">
     <div class="top-strip-title">
-      🛡️ AI Có Trách Nhiệm
+      <span>🛡️ AI Có Trách Nhiệm</span>
       <span class="top-strip-badge">Kiểm tra đầu vào</span>
     </div>
-    <button class="btn-primary" style="padding: 6px 12px; font-size: 12.5px;" onclick="goToPage('check')">
+    <button type="button" class="btn-primary" id="btn-top-check" style="padding: 6px 12px; font-size: 12.5px;">
       ⚡ Kiểm tra ngay
     </button>
   </div>
 
-  <!-- Sidebar xanh bên trái với đủ 6 icon giống ảnh 2 -->
+  <!-- SIDEBAR 6 ICON GIỐNG ẢNH 2 -->
   <aside class="sidebar">
-    <!-- 1. Trang chủ: Icon ngôi nhà -->
-    <button class="nav-btn active" data-page="home" data-label="Trang chủ" onclick="switchPage('home', this)">
+    <!-- 1. Trang chủ: Ngôi nhà -->
+    <button type="button" class="nav-btn active" data-page="home" data-label="Trang chủ">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M3 10.5L12 3l9 7.5" />
         <path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5" />
       </svg>
     </button>
 
-    <!-- 2. Kiểm tra dữ liệu & Tải tệp: Icon tài liệu -->
-    <button class="nav-btn" data-page="check" data-label="Kiểm chứng & Tải tệp" onclick="switchPage('check', this)">
+    <!-- 2. Kiểm chứng & Tải tệp: Tài liệu -->
+    <button type="button" class="nav-btn" data-page="check" data-label="Kiểm chứng & Tải tệp">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
         <polyline points="14 2 14 8 20 8" />
@@ -768,32 +750,32 @@
       </svg>
     </button>
 
-    <!-- 3. Lịch sử tra cứu: Icon kính lúp -->
-    <button class="nav-btn" data-page="history" data-label="Lịch sử tra cứu" onclick="switchPage('history', this)">
+    <!-- 3. Lịch sử tra cứu: Kính lúp -->
+    <button type="button" class="nav-btn" data-page="history" data-label="Lịch sử tra cứu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="7" />
         <line x1="21" y1="21" x2="16.65" y2="16.65" />
       </svg>
     </button>
 
-    <!-- 4. Quy trình khai báo: Icon bánh răng có dấu tick ở giữa -->
-    <button class="nav-btn" data-page="process" data-label="Quy trình khai báo" onclick="switchPage('process', this)">
+    <!-- 4. Quy trình khai báo: Bánh răng có dấu tick ở giữa -->
+    <button type="button" class="nav-btn" data-page="process" data-label="Quy trình khai báo">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
         <polyline points="9.3 12.2 11.2 14.1 15 10" stroke-width="2.2" />
       </svg>
     </button>
 
-    <!-- 5. Phản hồi đánh giá: Icon chỉnh sửa -->
-    <button class="nav-btn" data-page="feedback" data-label="Phản hồi đánh giá" onclick="switchPage('feedback', this)">
+    <!-- 5. Phản hồi đánh giá -->
+    <button type="button" class="nav-btn" data-page="feedback" data-label="Phản hồi đánh giá">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
         <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
       </svg>
     </button>
 
-    <!-- 6. Cài đặt hệ thống: Icon bánh răng cuối thanh bên -->
-    <button class="nav-btn" data-page="settings" data-label="Cài đặt & Bộ lọc" onclick="switchPage('settings', this)">
+    <!-- 6. Cài đặt & Bộ lọc -->
+    <button type="button" class="nav-btn" data-page="settings" data-label="Cài đặt & Bộ lọc">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="3" />
         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
@@ -801,20 +783,19 @@
     </button>
   </aside>
 
-  <!-- Nội dung chính -->
   <div class="main-container">
     <main class="content-card">
 
-      <!-- ==================== TRANG 1: TRANG CHỦ ==================== -->
+      <!-- TRANG 1: TRANG CHỦ -->
       <section id="page-home" class="page-section active">
         <div class="intro-box">
-          <div style="max-width: 660px;">
+          <div style="max-width: 650px;">
             <strong style="font-size: 16px; color: #0f172a;">Công cụ “AI Có Trách Nhiệm”</strong>
             <p style="font-size: 13.5px; color: #475569; margin-top: 4px; line-height: 1.5;">
               Kiểm tra dữ liệu đầu vào trước khi gửi lên AI: cảnh báo thông tin cá nhân (PII), chấm điểm mức độ nguy hiểm, yêu cầu khai báo nguồn và nhắc kiểm chứng đầu ra.
             </p>
           </div>
-          <button class="btn-primary" onclick="goToPage('check')">📂 Kiểm tra & Tải tệp</button>
+          <button type="button" class="btn-primary" id="btn-home-check">📂 Kiểm tra & Tải tệp</button>
         </div>
 
         <div class="stats-grid">
@@ -835,7 +816,6 @@
         <h1 class="main-heading">LỘ TRÌNH</h1>
         <p class="sub-heading">Quy chuẩn 3 bước sử dụng AI an toàn, minh bạch và có trách nhiệm</p>
 
-        <!-- Timeline giống ảnh 2 -->
         <div class="timeline">
           <div class="timeline-rail"></div>
 
@@ -895,7 +875,7 @@
         </div>
       </section>
 
-      <!-- ==================== TRANG 2: KIỂM CHỨNG & TẢI TỆP ==================== -->
+      <!-- TRANG 2: KIỂM CHỨNG & TẢI TỆP -->
       <section id="page-check" class="page-section">
         <h1 class="main-heading" style="text-align:left; font-size:21px;">KIỂM TRA DỮ LIỆU & TẢI LÊN TỆP</h1>
         <p class="sub-heading" style="text-align:left; margin-bottom:16px;">
@@ -904,7 +884,7 @@
 
         <div class="split-grid">
           <div>
-            <div class="upload-box" id="drop-zone" onclick="document.getElementById('file-input').click()">
+            <div class="upload-box" id="drop-zone">
               <input type="file" id="file-input" accept=".txt,.csv,.json,.md,.log,.xml,.html" hidden />
               <div style="font-size:26px;">📁</div>
               <strong style="font-size:14px;">Tải lên tệp kết hợp kiểm chứng thông tin</strong>
@@ -915,7 +895,7 @@
             <div class="form-field">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
                 <label class="form-label" style="margin:0;">Nội dung đầu vào cần kiểm tra</label>
-                <button type="button" class="btn-secondary" style="padding:4px 10px; font-size:12px;" onclick="loadSamplePII()">
+                <button type="button" class="btn-secondary" id="btn-sample-pii" style="padding:4px 10px; font-size:12px;">
                   ✨ Nạp mẫu có PII
                 </button>
               </div>
@@ -940,8 +920,8 @@
             </div>
 
             <div style="display:flex; gap:10px; flex-wrap:wrap;">
-              <button type="button" class="btn-primary" onclick="inspectInput(true)">🔍 Kiểm tra & Lưu lịch sử</button>
-              <button type="button" class="btn-secondary" onclick="maskSensitiveData()">🛡️ Che thông tin nhạy cảm</button>
+              <button type="button" class="btn-primary" id="btn-inspect">🔍 Kiểm tra & Lưu lịch sử</button>
+              <button type="button" class="btn-secondary" id="btn-mask">🛡️ Che thông tin nhạy cảm</button>
             </div>
           </div>
 
@@ -986,7 +966,7 @@
         </div>
       </section>
 
-      <!-- ==================== TRANG 3: LỊCH SỬ TRA CỨU ==================== -->
+      <!-- TRANG 3: LỊCH SỬ TRA CỨU -->
       <section id="page-history" class="page-section">
         <h1 class="main-heading" style="text-align:left; font-size:21px;">LỊCH SỬ TRA CỨU</h1>
         <p class="sub-heading" style="text-align:left; margin-bottom:16px;">
@@ -994,21 +974,21 @@
         </p>
 
         <div class="filter-bar">
-          <input type="text" id="search-history" placeholder="🔎 Tìm theo nội dung, tên tệp hoặc nguồn..." style="flex:1; min-width:200px;" oninput="renderHistory()" />
-          <select id="filter-risk" style="width:190px;" onchange="renderHistory()">
+          <input type="text" id="search-history" placeholder="🔎 Tìm theo nội dung, tên tệp hoặc nguồn..." style="flex:1; min-width:200px;" />
+          <select id="filter-risk" style="width:190px;">
             <option value="all">Tất cả mức độ</option>
             <option value="Nghiêm trọng">Nghiêm trọng</option>
             <option value="Cao">Cao</option>
             <option value="Trung bình">Trung bình</option>
             <option value="Thấp / An toàn">Thấp / An toàn</option>
           </select>
-          <button class="btn-secondary" onclick="clearHistory()">🗑️ Xóa tất cả</button>
+          <button type="button" class="btn-secondary" id="btn-clear-history">🗑️ Xóa tất cả</button>
         </div>
 
         <div id="history-container"></div>
       </section>
 
-      <!-- ==================== TRANG 4: QUY TRÌNH KHAI BÁO ==================== -->
+      <!-- TRANG 4: QUY TRÌNH KHAI BÁO -->
       <section id="page-process" class="page-section">
         <h1 class="main-heading" style="text-align:left; font-size:21px;">QUY TRÌNH KHAI BÁO CHUẨN</h1>
         <p class="sub-heading" style="text-align:left; margin-bottom:16px;">
@@ -1050,12 +1030,12 @@
             <label class="form-label">Nguồn dữ liệu & Cam kết bảo mật</label>
             <textarea id="decl-source" rows="2" placeholder="Ghi rõ nguồn và xác nhận đã loại bỏ thông tin cá nhân..."></textarea>
           </div>
-          <button class="btn-primary" onclick="exportDeclaration()">✅ Tạo phiếu khai báo</button>
+          <button type="button" class="btn-primary" id="btn-export-decl">✅ Tạo phiếu khai báo</button>
           <pre id="decl-result" style="display:none; margin-top:12px; background:#fff; border:1px solid #cbd5e1; padding:12px; border-radius:10px; font-size:13px; white-space:pre-wrap;"></pre>
         </div>
       </section>
 
-      <!-- ==================== TRANG 5: PHẢN HỒI ĐÁNH GIÁ ==================== -->
+      <!-- TRANG 5: PHẢN HỒI ĐÁNH GIÁ -->
       <section id="page-feedback" class="page-section">
         <h1 class="main-heading" style="text-align:left; font-size:21px;">PHẢN HỒI & ĐÁNH GIÁ HỖ TRỢ</h1>
         <p class="sub-heading" style="text-align:left; margin-bottom:16px;">
@@ -1064,15 +1044,15 @@
 
         <label class="form-label">1. Chọn nấc đánh giá trải nghiệm:</label>
         <div class="mood-grid">
-          <button type="button" class="mood-card" id="m-sad" onclick="pickMood('sad')">
+          <button type="button" class="mood-card" id="m-sad" data-mood="sad">
             <span style="font-size:36px;">😞</span>
             <strong style="font-size:13px;">Mặt buồn (Chưa tốt)</strong>
           </button>
-          <button type="button" class="mood-card" id="m-normal" onclick="pickMood('normal')">
+          <button type="button" class="mood-card" id="m-normal" data-mood="normal">
             <span style="font-size:36px;">😐</span>
             <strong style="font-size:13px;">Bình thường</strong>
           </button>
-          <button type="button" class="mood-card" id="m-happy" onclick="pickMood('happy')">
+          <button type="button" class="mood-card" id="m-happy" data-mood="happy">
             <span style="font-size:36px;">😊</span>
             <strong style="font-size:13px;">Mặt cười (Hài lòng)</strong>
           </button>
@@ -1087,13 +1067,13 @@
             </div>
           </div>
           <div class="chat-input-bar">
-            <input type="text" id="feedback-input" placeholder="Nhập góp ý đánh giá hoặc câu hỏi hỗ trợ..." onkeypress="if(event.key==='Enter') sendFeedbackChat()" />
-            <button class="btn-primary" onclick="sendFeedbackChat()">Gửi</button>
+            <input type="text" id="feedback-input" placeholder="Nhập góp ý đánh giá hoặc câu hỏi hỗ trợ..." />
+            <button type="button" class="btn-primary" id="btn-send-feedback">Gửi</button>
           </div>
         </div>
       </section>
 
-      <!-- ==================== TRANG 6: CÀI ĐẶT & BỘ LỌC ==================== -->
+      <!-- TRANG 6: CÀI ĐẶT -->
       <section id="page-settings" class="page-section">
         <h1 class="main-heading" style="text-align:left; font-size:21px;">CÀI ĐẶT HỆ THỐNG & BỘ LỌC PII</h1>
         <p class="sub-heading" style="text-align:left; margin-bottom:16px;">
@@ -1126,7 +1106,7 @@
           <label class="form-label">Gemini API Key (Tùy chọn để kết nối Chatbot Gemini trực tuyến)</label>
           <div style="display:flex; gap:8px;">
             <input type="password" id="settings-gemini-key" placeholder="AIza..." />
-            <button class="btn-primary" onclick="saveKeyFromSettings()">Lưu Key</button>
+            <button type="button" class="btn-primary" id="btn-save-key">Lưu Key</button>
           </div>
           <div id="key-saved-msg" style="font-size:12px; color:#16a34a; margin-top:6px;"></div>
         </div>
@@ -1134,14 +1114,13 @@
 
     </main>
 
-    <!-- FOOTER GIỐNG ẢNH 1 -->
     <footer class="footer-note">
       AI Có Trách Nhiệm • Phiên bản demo học tập
     </footer>
   </div>
 
-  <!-- NÚT CHATBOT GEMINI TÁCH RIÊNG MÀU TÍM GIỐNG ẢNH 1 -->
-  <button class="gemini-fab" onclick="toggleGemini()" aria-label="Mở Chatbot Gemini hỗ trợ khách hàng">
+  <!-- CHATBOT GEMINI TÁCH RIÊNG MÀU TÍM GIỐNG ẢNH 1 -->
+  <button type="button" class="gemini-fab" id="gemini-fab-btn" aria-label="Mở Chatbot Gemini hỗ trợ khách hàng">
     <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
       <defs>
         <radialGradient id="bubble3d" cx="35%" cy="30%" r="70%">
@@ -1157,7 +1136,6 @@
     </svg>
   </button>
 
-  <!-- CỬA SỔ CHATBOT GEMINI -->
   <div class="gemini-popup" id="gemini-popup">
     <div class="gemini-head">
       <div style="display:flex; align-items:center; gap:9px;">
@@ -1167,7 +1145,7 @@
           <div style="font-size:11px; opacity:0.9;">Trợ lý AI Có Trách Nhiệm</div>
         </div>
       </div>
-      <button onclick="toggleGemini()" style="background:transparent; border:none; color:#fff; font-size:18px; cursor:pointer;">✕</button>
+      <button type="button" id="gemini-close-btn" style="background:transparent; border:none; color:#fff; font-size:18px; cursor:pointer;">✕</button>
     </div>
 
     <div class="gemini-body" id="gemini-body">
@@ -1177,341 +1155,478 @@
     </div>
 
     <div class="quick-row">
-      <button class="quick-btn" onclick="quickGemini('Những dữ liệu cá nhân nào bị cảnh báo?')">Dữ liệu bị cảnh báo?</button>
-      <button class="quick-btn" onclick="quickGemini('Các mức độ nguy hiểm được tính thế nào?')">Mức độ nguy hiểm?</button>
-      <button class="quick-btn" onclick="quickGemini('Hướng dẫn tải tệp và khai báo nguồn')">Tải tệp & Khai báo?</button>
+      <button type="button" class="quick-btn" data-q="Những dữ liệu cá nhân nào bị cảnh báo?">Dữ liệu bị cảnh báo?</button>
+      <button type="button" class="quick-btn" data-q="Các mức độ nguy hiểm được tính thế nào?">Mức độ nguy hiểm?</button>
+      <button type="button" class="quick-btn" data-q="Hướng dẫn tải tệp và khai báo nguồn">Tải tệp & Khai báo?</button>
     </div>
 
     <div class="chat-input-bar">
-      <input type="text" id="gemini-input" placeholder="Nhắn hỏi Gemini..." onkeypress="if(event.key==='Enter') sendGemini()" />
-      <button class="btn-primary" style="background:#6d28d9;" onclick="sendGemini()">Gửi</button>
+      <input type="text" id="gemini-input" placeholder="Nhắn hỏi Gemini..." />
+      <button type="button" class="btn-primary" id="gemini-send-btn" style="background:#6d28d9;">Gửi</button>
     </div>
   </div>
 
   <script>
-    let historyData = JSON.parse(localStorage.getItem('rai_history_v2') || '[]');
-    let currentFile = '';
-    let geminiKey = localStorage.getItem('gemini_api_key') || '';
-    document.getElementById('settings-gemini-key').value = geminiKey;
-
-    function switchPage(pageId, btn) {
-      document.querySelectorAll('.page-section').forEach(el => el.classList.remove('active'));
-      document.getElementById('page-' + pageId).classList.add('active');
-      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-      if (btn) btn.classList.add('active');
-      if (pageId === 'history') renderHistory();
-      if (pageId === 'home') updateStats();
-    }
-
-    function goToPage(pageId) {
-      const btn = document.querySelector(.nav-btn[data-page="${pageId}"]);
-      switchPage(pageId, btn);
-    }
-
-    function updateStats() {
-      document.getElementById('home-total').textContent = historyData.length;
-      document.getElementById('home-danger').textContent = historyData.filter(x => x.risk === 'Cao' || x.risk === 'Nghiêm trọng').length;
-      document.getElementById('home-declared').textContent = historyData.filter(x => x.sourceType && x.sourceDetail).length;
-    }
-
-    // Upload tệp kết hợp ở phần kiểm chứng
-    const fileInput = document.getElementById('file-input');
-    const dropZone = document.getElementById('drop-zone');
-
-    fileInput.addEventListener('change', e => {
-      if (e.target.files[0]) readUploadedFile(e.target.files[0]);
-    });
-    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
-    dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
-    dropZone.addEventListener('drop', e => {
-      e.preventDefault();
-      dropZone.classList.remove('dragover');
-      if (e.dataTransfer.files[0]) readUploadedFile(e.dataTransfer.files[0]);
-    });
-
-    function readUploadedFile(file) {
-      currentFile = file.name;
-      document.getElementById('file-chip-area').innerHTML = <span class="file-pill">📄 ${esc(file.name)} (${Math.max(1, Math.round(file.size/1024))} KB)</span>;
-      const reader = new FileReader();
-      reader.onload = ev => {
-        document.getElementById('input-text').value = ev.target.result;
-        inspectInput(false);
-      };
-      reader.readAsText(file, 'UTF-8');
-    }
-
-    function loadSamplePII() {
-      currentFile = '';
-      document.getElementById('file-chip-area').innerHTML = '';
-      document.getElementById('input-text').value =
-        "Thí sinh: Lê Hoàng Nam - CCCD: 079206009876\n" +
-        "SĐT: 0987654321 | Email: hoangnam.le@gmail.com\n" +
-        "Số tài khoản ngân hàng: 10293847561029\n" +
-        "Nhờ AI tóm tắt thông tin cá nhân trên để lập danh sách lớp.";
-      document.getElementById('source-type').value = 'Dữ liệu khách hàng / Học sinh';
-      document.getElementById('source-detail').value = 'Danh sách thí sinh lớp 12B';
-    }
-
-    function inspectInput(saveRecord) {
-      const text = document.getElementById('input-text').value.trim();
-      const sourceType = document.getElementById('source-type').value;
-      const sourceDetail = document.getElementById('source-detail').value.trim();
-
-      if (!text) {
-        alert('Vui lòng nhập nội dung hoặc tải lên tệp!');
-        return;
-      }
-      if (saveRecord && (!sourceType || !sourceDetail)) {
-        alert('Vui lòng khai báo đầy đủ Loại nguồn và Tên nguồn dữ liệu trước khi lưu!');
-        return;
-      }
-
-      const rules = [];
-      if (document.getElementById('cfg-cccd').checked) {
-        rules.push({ name: 'CCCD / CMND', weight: 40, regex: /\b(0\d{11}|\d{9}|\d{12})\b/g });
-      }
-      if (document.getElementById('cfg-secret').checked) {
-        rules.push({ name: 'Tài khoản ngân hàng', weight: 40, regex: /\b\d{13,19}\b/g });
-        rules.push({ name: 'API Key / Mật khẩu', weight: 45, regex: /(sk-[A-Za-z0-9]{12,}|AIza[0-9A-Za-z\-_]{20,}|(password|mật khẩu)\s*[:=]\s*\S+)/gi });
-      }
-      if (document.getElementById('cfg-contact').checked) {
-        rules.push({ name: 'Số điện thoại', weight: 25, regex: /(\+84|0)(3|5|7|8|9)\d{8}\b/g });
-        rules.push({ name: 'Email cá nhân', weight: 20, regex: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g });
-      }
-
-      let score = 0;
-      const foundLabels = [];
-      const hits = [];
-
-      rules.forEach(r => {
-        const m = text.match(r.regex);
-        if (m && m.length) {
-          score += r.weight + (m.length - 1) * 5;
-          foundLabels.push(${r.name} (${m.length}));
-          m.forEach(x => hits.push(x));
-        }
-      });
-
-      if (!sourceType || !sourceDetail) score += 15;
-      score = Math.min(100, score);
-
-      let risk = 'Thấp / An toàn', bgClass = 'bg-low', color = '#16a34a';
-      if (score >= 70) { risk = 'Nghiêm trọng'; bgClass = 'bg-critical'; color = '#dc2626'; }
-      else if (score >= 45) { risk = 'Cao'; bgClass = 'bg-high'; color = '#ea580c'; }
-      else if (score >= 20) { risk = 'Trung bình'; bgClass = 'bg-medium'; color = '#d97706'; }
-
-      const badge = document.getElementById('risk-badge');
-      badge.className = risk-badge ${bgClass};
-      badge.textContent = ${risk} (${score}/100);
-
-      const fill = document.getElementById('meter-fill');
-      fill.style.width = Math.max(8, score) + '%';
-      fill.style.backgroundColor = color;
-
-      document.getElementById('risk-desc').innerHTML = foundLabels.length
-        ? ⚠️ Phát hiện <strong>${foundLabels.length} loại thông tin cá nhân/nhạy cảm</strong>. Hãy che dữ liệu trước khi gửi cho AI.
-        : ✅ Chưa phát hiện thông tin cá nhân rủi ro cao. Hãy hoàn thành checklist kiểm chứng đầu ra bên dưới.;
-
-      document.getElementById('pii-tags').innerHTML = foundLabels.map(l => <span class="pii-chip">🚨 ${esc(l)}</span>).join('');
-
-      const hlWrap = document.getElementById('highlight-wrapper');
-      if (hits.length) {
-        let html = esc(text);
-        [...new Set(hits)].sort((a, b) => b.length - a.length).forEach(h => {
-          const safe = esc(h).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-          html = html.replace(new RegExp(safe, 'g'), <mark class="pii-hit">${esc(h)}</mark>);
-        });
-        document.getElementById('preview-highlight').innerHTML = html;
-        hlWrap.style.display = 'block';
-      } else {
-        hlWrap.style.display = 'none';
-      }
-
-      if (saveRecord) {
-        historyData.unshift({
-          id: Date.now(),
-          time: new Date().toLocaleString('vi-VN'),
-          file: currentFile || 'Văn bản nhập tay',
-          snippet: text.slice(0, 120) + (text.length > 120 ? '...' : ''),
-          risk, bgClass, score, sourceType, sourceDetail
-        });
-        localStorage.setItem('rai_history_v2', JSON.stringify(historyData));
-        updateStats();
-      }
-    }
-
-    function maskSensitiveData() {
-      let t = document.getElementById('input-text').value;
-      if (!t.trim()) return;
-      t = t
-        .replace(/(sk-[A-Za-z0-9]{12,}|AIza[0-9A-Za-z\-_]{20,})/g, '[ĐÃ_CHE_KEY]')
-        .replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[ĐÃ_CHE_EMAIL]')
-        .replace(/(\+84|0)(3|5|7|8|9)\d{8}\b/g, '[ĐÃ_CHE_SĐT]')
-        .replace(/\b\d{13,19}\b/g, '[ĐÃ_CHE_TÀI_KHOẢN]')
-        .replace(/\b(0\d{11}|\d{9}|\d{12})\b/g, '[ĐÃ_CHE_CCCD]');
-      document.getElementById('input-text').value = t;
-      inspectInput(false);
-    }
-
-    function renderHistory() {
-      const q = document.getElementById('search-history').value.toLowerCase();
-      const f = document.getElementById('filter-risk').value;
-      const list = historyData.filter(i => {
-        const matchQ = i.snippet.toLowerCase().includes(q) || i.file.toLowerCase().includes(q) || i.sourceDetail.toLowerCase().includes(q);
-        const matchF = f === 'all' || i.risk === f;
-        return matchQ && matchF;
-      });
-      const box = document.getElementById('history-container');
-      if (!list.length) {
-        box.innerHTML = <div style="text-align:center; padding:26px; color:#64748b;">Chưa có lịch sử tra cứu phù hợp.</div>;
-        return;
-      }
-      box.innerHTML = list.map(i => `
-        <div class="history-card">
-          <div style="flex:1;">
-            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-              <strong>📄 ${esc(i.file)}</strong>
-              <span class="risk-badge ${i.bgClass}" style="font-size:11px; padding:2px 9px;">${i.risk} (${i.score}/100)</span>
-            </div>
-            <div style="font-size:13px; color:#334155; margin-top:5px;">${esc(i.snippet)}</div>
-            <div style="font-size:12px; color:#64748b; margin-top:4px;">🕒 ${i.time} • 📌 ${esc(i.sourceType)} (${esc(i.sourceDetail)})</div>
-          </div>
-          <button class="btn-secondary" style="padding:5px 10px; font-size:12px;" onclick="removeHistory(${i.id})">Xóa</button>
-        </div>
-      `).join('');
-    }
-
-    function removeHistory(id) {
-      historyData = historyData.filter(x => x.id !== id);
-      localStorage.setItem('rai_history_v2', JSON.stringify(historyData));
-      renderHistory();
-      updateStats();
-    }
-
-    function clearHistory() {
-      if (confirm('Xóa toàn bộ lịch sử tra cứu?')) {
+    (function () {
+      var historyData = [];
+      try {
+        historyData = JSON.parse(localStorage.getItem('rai_history_v2') || '[]');
+      } catch (e) {
         historyData = [];
-        localStorage.removeItem('rai_history_v2');
-        renderHistory();
-        updateStats();
       }
-    }
 
-    function exportDeclaration() {
-      const name = document.getElementById('decl-name').value.trim() || 'Chưa nhập tên';
-      const goal = document.getElementById('decl-goal').value.trim() || 'Học tập & nghiên cứu';
-      const src = document.getElementById('decl-source').value.trim() || 'Đã rà soát và ẩn danh dữ liệu.';
-      const out = document.getElementById('decl-result');
-      out.textContent =
-`PHIẾU KHAI BÁO NGUỒN & CAM KẾT AI CÓ TRÁCH NHIỆM
-• Người thực hiện : ${name}
-• Thời gian       : ${new Date().toLocaleString('vi-VN')}
-• Mục đích        : ${goal}
-• Nguồn & Ghi chú : ${src}
-• Xác nhận        : [✓] Đã kiểm tra PII | [✓] Đã khai báo nguồn | [✓] Kiểm chứng đầu ra AI`;
-      out.style.display = 'block';
-    }
+      var currentFile = '';
+      var mood = '';
+      var geminiKey = '';
+      try {
+        geminiKey = localStorage.getItem('gemini_api_key') || '';
+      } catch (e) {
+        geminiKey = '';
+      }
 
-    // Phản hồi đánh giá (mặt buồn / bình thường / mặt cười + chat)
-    let mood = '';
-    function pickMood(m) {
-      mood = m;
-      ['sad', 'normal', 'happy'].forEach(k => document.getElementById('m-' + k).className = 'mood-card');
-      document.getElementById('m-' + m).classList.add('active-' + m);
-      const txt = {
-        sad: '😞 Đã chọn: Mặt buồn — Hãy nhắn bên dưới để chúng tôi hỗ trợ khắc phục ngay!',
-        normal: '😐 Đã chọn: Bình thường — Cảm ơn bạn đã góp ý!',
-        happy: '😊 Đã chọn: Mặt cười — Rất vui vì công cụ hữu ích với bạn!'
-      };
-      document.getElementById('mood-msg').textContent = txt[m];
-    }
+      function esc(str) {
+        return String(str)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;');
+      }
 
-    function sendFeedbackChat() {
-      const inp = document.getElementById('feedback-input');
-      const val = inp.value.trim();
-      if (!val) return;
-      const box = document.getElementById('feedback-chat');
-      const icon = mood === 'happy' ? '😊 ' : mood === 'normal' ? '😐 ' : mood === 'sad' ? '😞 ' : '';
-      box.innerHTML += <div class="bubble bubble-user">${esc(icon + val)}</div>;
-      inp.value = '';
-      setTimeout(() => {
-        box.innerHTML += <div class="bubble bubble-bot">Cảm ơn phản hồi của bạn! Bộ phận hỗ trợ đã tiếp nhận đánh giá và sẽ phản hồi sớm nhất.</div>;
+      function switchPage(pageId) {
+        var sections = document.querySelectorAll('.page-section');
+        for (var i = 0; i < sections.length; i++) {
+          sections[i].classList.remove('active');
+        }
+        var target = document.getElementById('page-' + pageId);
+        if (target) {
+          target.classList.add('active');
+        }
+
+        var buttons = document.querySelectorAll('.nav-btn');
+        for (var j = 0; j < buttons.length; j++) {
+          var isMatch = buttons[j].getAttribute('data-page') === pageId;
+          buttons[j].classList.toggle('active', isMatch);
+        }
+
+        if (pageId === 'history') renderHistory();
+        if (pageId === 'home') updateStats();
+      }
+
+      window.switchPage = switchPage;
+      window.goToPage = switchPage;
+
+      function updateStats() {
+        var totalEl = document.getElementById('home-total');
+        var dangerEl = document.getElementById('home-danger');
+        var declaredEl = document.getElementById('home-declared');
+        if (totalEl) totalEl.textContent = historyData.length;
+        if (dangerEl) {
+          dangerEl.textContent = historyData.filter(function (x) {
+            return x.risk === 'Cao' || x.risk === 'Nghiêm trọng';
+          }).length;
+        }
+        if (declaredEl) {
+          declaredEl.textContent = historyData.filter(function (x) {
+            return Boolean(x.sourceType && x.sourceDetail);
+          }).length;
+        }
+      }
+
+      function readUploadedFile(file) {
+        currentFile = file.name;
+        var chipArea = document.getElementById('file-chip-area');
+        chipArea.innerHTML = '<span class="file-pill">📄 ' + esc(file.name) + ' (' + Math.max(1, Math.round(file.size / 1024)) + ' KB)</span>';
+        var reader = new FileReader();
+        reader.onload = function (ev) {
+          document.getElementById('input-text').value = ev.target.result;
+          inspectInput(false);
+        };
+        reader.readAsText(file, 'UTF-8');
+      }
+
+      function loadSamplePII() {
+        currentFile = '';
+        document.getElementById('file-chip-area').innerHTML = '';
+        document.getElementById('input-text').value =
+          'Thí sinh: Lê Hoàng Nam - CCCD: 079206009876\n' +
+          'SĐT: 0987654321 | Email: hoangnam.le@gmail.com\n' +
+          'Số tài khoản ngân hàng: 10293847561029\n' +
+          'Nhờ AI tóm tắt thông tin cá nhân trên để lập danh sách lớp.';
+        document.getElementById('source-type').value = 'Dữ liệu khách hàng / Học sinh';
+        document.getElementById('source-detail').value = 'Danh sách thí sinh lớp 12B';
+      }
+
+      function inspectInput(saveRecord) {
+        var text = document.getElementById('input-text').value.trim();
+        var sourceType = document.getElementById('source-type').value;
+        var sourceDetail = document.getElementById('source-detail').value.trim();
+
+        if (!text) {
+          alert('Vui lòng nhập nội dung hoặc tải lên tệp!');
+          return;
+        }
+        if (saveRecord && (!sourceType || !sourceDetail)) {
+          alert('Vui lòng khai báo đầy đủ Loại nguồn và Tên nguồn dữ liệu trước khi lưu!');
+          return;
+        }
+
+        var rules = [];
+        if (document.getElementById('cfg-cccd').checked) {
+          rules.push({ name: 'CCCD / CMND', weight: 40, regex: /\b(0\d{11}|\d{9}|\d{12})\b/g });
+        }
+        if (document.getElementById('cfg-secret').checked) {
+          rules.push({ name: 'Tài khoản ngân hàng', weight: 40, regex: /\b\d{13,19}\b/g });
+          rules.push({ name: 'API Key / Mật khẩu', weight: 45, regex: /(sk-[A-Za-z0-9]{12,}|AIza[0-9A-Za-z\-_]{20,}|(password|mật khẩu)\s*[:=]\s*\S+)/gi });
+        }
+        if (document.getElementById('cfg-contact').checked) {
+          rules.push({ name: 'Số điện thoại', weight: 25, regex: /(\+84|0)(3|5|7|8|9)\d{8}\b/g });
+          rules.push({ name: 'Email cá nhân', weight: 20, regex: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g });
+        }
+
+        var score = 0;
+        var foundLabels = [];
+        var hits = [];
+
+        rules.forEach(function (r) {
+          var m = text.match(r.regex);
+          if (m && m.length > 0) {
+            score += r.weight + (m.length - 1) * 5;
+            foundLabels.push(r.name + ' (' + m.length + ')');
+            m.forEach(function (x) { hits.push(x); });
+          }
+        });
+
+        if (!sourceType || !sourceDetail) score += 15;
+        score = Math.min(100, score);
+
+        var risk = 'Thấp / An toàn';
+        var bgClass = 'bg-low';
+        var color = '#16a34a';
+        if (score >= 70) {
+          risk = 'Nghiêm trọng'; bgClass = 'bg-critical'; color = '#dc2626';
+        } else if (score >= 45) {
+          risk = 'Cao'; bgClass = 'bg-high'; color = '#ea580c';
+        } else if (score >= 20) {
+          risk = 'Trung bình'; bgClass = 'bg-medium'; color = '#d97706';
+        }
+
+        var badge = document.getElementById('risk-badge');
+        badge.className = 'risk-badge ' + bgClass;
+        badge.textContent = risk + ' (' + score + '/100)';
+
+        var fill = document.getElementById('meter-fill');
+        fill.style.width = Math.max(8, score) + '%';
+        fill.style.backgroundColor = color;
+
+        document.getElementById('risk-desc').innerHTML = foundLabels.length
+          ? '⚠️ Phát hiện <strong>' + foundLabels.length + ' loại thông tin cá nhân/nhạy cảm</strong>. Hãy che dữ liệu trước khi gửi cho AI.'
+          : '✅ Chưa phát hiện thông tin cá nhân rủi ro cao. Hãy hoàn thành checklist kiểm chứng đầu ra bên dưới.';
+
+        document.getElementById('pii-tags').innerHTML = foundLabels.map(function (l) {
+          return '<span class="pii-chip">🚨 ' + esc(l) + '</span>';
+        }).join('');
+
+        var hlWrap = document.getElementById('highlight-wrapper');
+        if (hits.length > 0) {
+          var html = esc(text);
+          var uniqueHits = [];
+          hits.forEach(function (item) {
+            if (uniqueHits.indexOf(item) === -1) uniqueHits.push(item);
+          });
+          uniqueHits.sort(function (a, b) { return b.length - a.length; });
+          uniqueHits.forEach(function (h) {
+            var safe = esc(h).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            html = html.replace(new RegExp(safe, 'g'), '<mark class="pii-hit">' + esc(h) + '</mark>');
+          });
+          document.getElementById('preview-highlight').innerHTML = html;
+          hlWrap.style.display = 'block';
+        } else {
+          hlWrap.style.display = 'none';
+        }
+
+        if (saveRecord) {
+          historyData.unshift({
+            id: Date.now(),
+            time: new Date().toLocaleString('vi-VN'),
+            file: currentFile || 'Văn bản nhập tay',
+            snippet: text.slice(0, 120) + (text.length > 120 ? '...' : ''),
+            risk: risk,
+            bgClass: bgClass,
+            score: score,
+            sourceType: sourceType,
+            sourceDetail: sourceDetail
+          });
+          try {
+            localStorage.setItem('rai_history_v2', JSON.stringify(historyData));
+          } catch (e) {}
+          updateStats();
+        }
+      }
+
+      function maskSensitiveData() {
+        var t = document.getElementById('input-text').value;
+        if (!t.trim()) return;
+        t = t
+          .replace(/(sk-[A-Za-z0-9]{12,}|AIza[0-9A-Za-z\-_]{20,})/g, '[ĐÃ_CHE_KEY]')
+          .replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, '[ĐÃ_CHE_EMAIL]')
+          .replace(/(\+84|0)(3|5|7|8|9)\d{8}\b/g, '[ĐÃ_CHE_SĐT]')
+          .replace(/\b\d{13,19}\b/g, '[ĐÃ_CHE_TÀI_KHOẢN]')
+          .replace(/\b(0\d{11}|\d{9}|\d{12})\b/g, '[ĐÃ_CHE_CCCD]');
+        document.getElementById('input-text').value = t;
+        inspectInput(false);
+      }
+
+      function renderHistory() {
+        var q = document.getElementById('search-history').value.toLowerCase();
+        var f = document.getElementById('filter-risk').value;
+        var list = historyData.filter(function (i) {
+          var matchQ =
+            i.snippet.toLowerCase().indexOf(q) !== -1 ||
+            i.file.toLowerCase().indexOf(q) !== -1 ||
+            i.sourceDetail.toLowerCase().indexOf(q) !== -1;
+          var matchF = f === 'all' || i.risk === f;
+          return matchQ && matchF;
+        });
+
+        var box = document.getElementById('history-container');
+        if (!list.length) {
+          box.innerHTML = '<div style="text-align:center; padding:26px; color:#64748b;">Chưa có lịch sử tra cứu phù hợp.</div>';
+          return;
+        }
+
+        box.innerHTML = list.map(function (i) {
+          return (
+            '<div class="history-card">' +
+              '<div style="flex:1;">' +
+                '<div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">' +
+                  '<strong>📄 ' + esc(i.file) + '</strong>' +
+                  '<span class="risk-badge ' + i.bgClass + '" style="font-size:11px; padding:2px 9px;">' + esc(i.risk) + ' (' + i.score + '/100)</span>' +
+                '</div>' +
+                '<div style="font-size:13px; color:#334155; margin-top:5px;">' + esc(i.snippet) + '</div>' +
+                '<div style="font-size:12px; color:#64748b; margin-top:4px;">🕒 ' + esc(i.time) + ' • 📌 ' + esc(i.sourceType) + ' (' + esc(i.sourceDetail) + ')</div>' +
+              '</div>' +
+              '<button type="button" class="btn-secondary btn-del-history" data-id="' + i.id + '" style="padding:5px 10px; font-size:12px;">Xóa</button>' +
+            '</div>'
+          );
+        }).join('');
+
+        var delBtns = box.querySelectorAll('.btn-del-history');
+        for (var k = 0; k < delBtns.length; k++) {
+          delBtns[k].addEventListener('click', function () {
+            var id = Number(this.getAttribute('data-id'));
+            historyData = historyData.filter(function (x) { return x.id !== id; });
+            try { localStorage.setItem('rai_history_v2', JSON.stringify(historyData)); } catch (e) {}
+            renderHistory();
+            updateStats();
+          });
+        }
+      }
+
+      function exportDeclaration() {
+        var name = document.getElementById('decl-name').value.trim() || 'Chưa nhập tên';
+        var goal = document.getElementById('decl-goal').value.trim() || 'Học tập & nghiên cứu';
+        var src = document.getElementById('decl-source').value.trim() || 'Đã rà soát và ẩn danh dữ liệu.';
+        var out = document.getElementById('decl-result');
+        out.textContent =
+          'PHIẾU KHAI BÁO NGUỒN & CAM KẾT AI CÓ TRÁCH NHIỆM\n' +
+          '• Người thực hiện : ' + name + '\n' +
+          '• Thời gian       : ' + new Date().toLocaleString('vi-VN') + '\n' +
+          '• Mục đích        : ' + goal + '\n' +
+          '• Nguồn & Ghi chú : ' + src + '\n' +
+          '• Xác nhận        : [✓] Đã kiểm tra PII | [✓] Đã khai báo nguồn | [✓] Kiểm chứng đầu ra AI';
+        out.style.display = 'block';
+      }
+
+      function pickMood(m) {
+        mood = m;
+        document.getElementById('m-sad').className = 'mood-card';
+        document.getElementById('m-normal').className = 'mood-card';
+        document.getElementById('m-happy').className = 'mood-card';
+        document.getElementById('m-' + m).classList.add('active-' + m);
+        var txt = {
+          sad: '😞 Đã chọn: Mặt buồn — Hãy nhắn bên dưới để chúng tôi hỗ trợ khắc phục ngay!',
+          normal: '😐 Đã chọn: Bình thường — Cảm ơn bạn đã góp ý!',
+          happy: '😊 Đã chọn: Mặt cười — Rất vui vì công cụ hữu ích với bạn!'
+        };
+        document.getElementById('mood-msg').textContent = txt[m];
+      }
+
+      function sendFeedbackChat() {
+        var inp = document.getElementById('feedback-input');
+        var val = inp.value.trim();
+        if (!val) return;
+        var box = document.getElementById('feedback-chat');
+        var icon = mood === 'happy' ? '😊 ' : mood === 'normal' ? '😐 ' : mood === 'sad' ? '😞 ' : '';
+        box.innerHTML += '<div class="bubble bubble-user">' + esc(icon + val) + '</div>';
+        inp.value = '';
+        setTimeout(function () {
+          box.innerHTML += '<div class="bubble bubble-bot">Cảm ơn phản hồi của bạn! Bộ phận hỗ trợ đã tiếp nhận đánh giá và sẽ phản hồi sớm nhất.</div>';
+          box.scrollTop = box.scrollHeight;
+        }, 400);
         box.scrollTop = box.scrollHeight;
-      }, 400);
-      box.scrollTop = box.scrollHeight;
-    }
+      }
 
-    function saveKeyFromSettings() {
-      geminiKey = document.getElementById('settings-gemini-key').value.trim();
-      localStorage.setItem('gemini_api_key', geminiKey);
-      document.getElementById('key-saved-msg').textContent = geminiKey
-        ? '✅ Đã lưu Gemini API Key thành công!'
-        : 'ℹ️ Đã xóa key, Chatbot đang dùng chế độ demo tích hợp sẵn.';
-    }
+      function appendGemini(role, msg) {
+        var body = document.getElementById('gemini-body');
+        var div = document.createElement('div');
+        div.className = 'bubble ' + (role === 'user' ? 'bubble-user' : 'bubble-bot');
+        if (role === 'user') div.style.background = '#6d28d9';
+        div.innerHTML = esc(msg).replace(/\n/g, '<br>');
+        body.appendChild(div);
+        body.scrollTop = body.scrollHeight;
+        return div;
+      }
 
-    // Chatbot Gemini nổi tách riêng
-    function toggleGemini() {
-      document.getElementById('gemini-popup').classList.toggle('open');
-    }
+      function sendGemini() {
+        var inp = document.getElementById('gemini-input');
+        var q = inp.value.trim();
+        if (!q) return;
+        appendGemini('user', q);
+        inp.value = '';
+        var wait = appendGemini('bot', 'Gemini đang trả lời...');
 
-    function quickGemini(q) {
-      document.getElementById('gemini-input').value = q;
-      sendGemini();
-    }
-
-    function appendGemini(role, msg) {
-      const body = document.getElementById('gemini-body');
-      const div = document.createElement('div');
-      div.className = bubble ${role === 'user' ? 'bubble-user' : 'bubble-bot'};
-      if (role === 'user') div.style.background = '#6d28d9';
-      div.innerHTML = esc(msg).replace(/\n/g, '<br>');
-      body.appendChild(div);
-      body.scrollTop = body.scrollHeight;
-      return div;
-    }
-
-    async function sendGemini() {
-      const inp = document.getElementById('gemini-input');
-      const q = inp.value.trim();
-      if (!q) return;
-      appendGemini('user', q);
-      inp.value = '';
-      const wait = appendGemini('bot', 'Gemini đang trả lời...');
-
-      if (geminiKey) {
-        try {
-          const r = await fetch(https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${encodeURIComponent(geminiKey)}, {
+        if (geminiKey) {
+          fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + encodeURIComponent(geminiKey), {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-              contents: [{ parts: [{ text: Bạn là trợ lý Gemini hỗ trợ khách hàng cho trang web AI Có Trách Nhiệm. Trả lời ngắn gọn bằng tiếng Việt: ${q} }] }]
+              contents: [{ parts: [{ text: 'Bạn là trợ lý Gemini hỗ trợ khách hàng cho trang web AI Có Trách Nhiệm. Trả lời ngắn gọn bằng tiếng Việt: ' + q }] }]
             })
+          })
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            var ans = null;
+            if (data && data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts && data.candidates[0].content.parts[0]) {
+              ans = data.candidates[0].content.parts[0].text;
+            }
+            if (ans) {
+              wait.innerHTML = esc(ans).replace(/\n/g, '<br>');
+            } else {
+              replyDemoGemini(q, wait);
+            }
+          })
+          .catch(function () {
+            replyDemoGemini(q, wait);
           });
-          const data = await r.json();
-          const ans = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (ans) { wait.innerHTML = esc(ans).replace(/\n/g, '<br>'); return; }
-        } catch (e) {}
+        } else {
+          setTimeout(function () {
+            replyDemoGemini(q, wait);
+          }, 420);
+        }
       }
 
-      setTimeout(() => {
-        const l = q.toLowerCase();
-        let ans = 'Mình có thể hỗ trợ bạn kiểm tra dữ liệu đầu vào, che thông tin cá nhân và hướng dẫn khai báo nguồn. Bạn hãy thử mở mục Tài liệu (icon thứ 2) để kiểm tra ngay nhé!';
-        if (l.includes('cảnh báo') || l.includes('cá nhân')) {
-          ans = 'Hệ thống cảnh báo: CCCD/CMND, Số điện thoại, Email, Số tài khoản ngân hàng và API Key/Mật khẩu. Bạn có thể tùy chỉnh bật/tắt ở mục Cài đặt (icon bánh răng cuối cùng).';
-        } else if (l.includes('nguy hiểm') || l.includes('mức độ')) {
+      function replyDemoGemini(q, bubbleEl) {
+        var l = q.toLowerCase();
+        var ans = 'Mình có thể hỗ trợ bạn kiểm tra dữ liệu đầu vào, che thông tin cá nhân và hướng dẫn khai báo nguồn. Bạn hãy thử mở mục Tài liệu (icon thứ 2 bên trái) để kiểm tra ngay nhé!';
+        if (l.indexOf('cảnh báo') !== -1 || l.indexOf('cá nhân') !== -1) {
+          ans = 'Hệ thống cảnh báo: CCCD/CMND, Số điện thoại, Email, Số tài khoản ngân hàng và API Key/Mật khẩu. Bạn có thể bật/tắt ở mục Cài đặt (icon bánh răng cuối cùng).';
+        } else if (l.indexOf('nguy hiểm') !== -1 || l.indexOf('mức độ') !== -1) {
           ans = 'Thang điểm rủi ro 0–100 chia thành 4 mức:\n• Thấp / An toàn (0–19)\n• Trung bình (20–44)\n• Cao (45–69)\n• Nghiêm trọng (70–100).';
-        } else if (l.includes('tệp') || l.includes('khai báo')) {
+        } else if (l.indexOf('tệp') !== -1 || l.indexOf('khai báo') !== -1) {
           ans = 'Tại trang Kiểm chứng & Tải tệp, bạn kéo thả tệp .txt/.csv/.json/.md vào khung upload, chọn loại nguồn + tên nguồn và nhấn "Kiểm tra & Lưu lịch sử".';
         }
-        wait.innerHTML = esc(ans).replace(/\n/g, '<br>');
-      }, 420);
-    }
+        bubbleEl.innerHTML = esc(ans).replace(/\n/g, '<br>');
+      }
 
-    function esc(s) {
-      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
+      document.addEventListener('DOMContentLoaded', function () {
+        var keyInput = document.getElementById('settings-gemini-key');
+        if (keyInput) keyInput.value = geminiKey;
 
-    updateStats();
+        // Điều hướng Sidebar 6 trang
+        var navBtns = document.querySelectorAll('.nav-btn');
+        for (var i = 0; i < navBtns.length; i++) {
+          navBtns[i].addEventListener('click', function () {
+            switchPage(this.getAttribute('data-page'));
+          });
+        }
+
+        document.getElementById('btn-top-check').addEventListener('click', function () { switchPage('check'); });
+        document.getElementById('btn-home-check').addEventListener('click', function () { switchPage('check'); });
+
+        // Upload tệp
+        var dropZone = document.getElementById('drop-zone');
+        var fileInput = document.getElementById('file-input');
+        dropZone.addEventListener('click', function () { fileInput.click(); });
+        fileInput.addEventListener('change', function (e) {
+          if (e.target.files && e.target.files[0]) readUploadedFile(e.target.files[0]);
+        });
+        dropZone.addEventListener('dragover', function (e) {
+          e.preventDefault();
+          dropZone.classList.add('dragover');
+        });
+        dropZone.addEventListener('dragleave', function () {
+          dropZone.classList.remove('dragover');
+        });
+        dropZone.addEventListener('drop', function (e) {
+          e.preventDefault();
+          dropZone.classList.remove('dragover');
+          if (e.dataTransfer.files && e.dataTransfer.files[0]) readUploadedFile(e.dataTransfer.files[0]);
+        });
+
+        // Kiểm chứng dữ liệu
+        document.getElementById('btn-sample-pii').addEventListener('click', loadSamplePII);
+        document.getElementById('btn-inspect').addEventListener('click', function () { inspectInput(true); });
+        document.getElementById('btn-mask').addEventListener('click', maskSensitiveData);
+
+        // Lịch sử tra cứu
+        document.getElementById('search-history').addEventListener('input', renderHistory);
+        document.getElementById('filter-risk').addEventListener('change', renderHistory);
+        document.getElementById('btn-clear-history').addEventListener('click', function () {
+          if (confirm('Xóa toàn bộ lịch sử tra cứu?')) {
+            historyData = [];
+            try { localStorage.removeItem('rai_history_v2'); } catch (e) {}
+            renderHistory();
+            updateStats();
+          }
+        });
+
+        // Quy trình khai báo
+        document.getElementById('btn-export-decl').addEventListener('click', exportDeclaration);
+
+        // Phản hồi đánh giá
+        var moodCards = document.querySelectorAll('.mood-card');
+        for (var m = 0; m < moodCards.length; m++) {
+          moodCards[m].addEventListener('click', function () {
+            pickMood(this.getAttribute('data-mood'));
+          });
+        }
+        document.getElementById('btn-send-feedback').addEventListener('click', sendFeedbackChat);
+        document.getElementById('feedback-input').addEventListener('keypress', function (e) {
+          if (e.key === 'Enter') sendFeedbackChat();
+        });
+
+        // Cài đặt
+        document.getElementById('btn-save-key').addEventListener('click', function () {
+          geminiKey = document.getElementById('settings-gemini-key').value.trim();
+          try { localStorage.setItem('gemini_api_key', geminiKey); } catch (e) {}
+          document.getElementById('key-saved-msg').textContent = geminiKey
+            ? '✅ Đã lưu Gemini API Key thành công!'
+            : 'ℹ️ Đã xóa key, Chatbot đang dùng chế độ demo tích hợp sẵn.';
+        });
+
+        // Chatbot Gemini
+        document.getElementById('gemini-fab-btn').addEventListener('click', function () {
+          document.getElementById('gemini-popup').classList.toggle('open');
+        });
+        document.getElementById('gemini-close-btn').addEventListener('click', function () {
+          document.getElementById('gemini-popup').classList.remove('open');
+        });
+        document.getElementById('gemini-send-btn').addEventListener('click', sendGemini);
+        document.getElementById('gemini-input').addEventListener('keypress', function (e) {
+          if (e.key === 'Enter') sendGemini();
+        });
+
+        var quickBtns = document.querySelectorAll('.quick-btn');
+        for (var q = 0; q < quickBtns.length; q++) {
+          quickBtns[q].addEventListener('click', function () {
+            document.getElementById('gemini-input').value = this.getAttribute('data-q');
+            sendGemini();
+          });
+        }
+
+        updateStats();
+      });
+    })();
   </script>
 </body>
 </html>
